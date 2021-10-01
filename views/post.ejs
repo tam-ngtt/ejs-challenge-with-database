@@ -1,0 +1,10 @@
+<%- include("partials/header"); -%>
+
+<%  function capitalizeFirstLetter(string) { %>
+<%  return string.charAt(0).toUpperCase() + string.slice(1); %>
+<%}%>
+
+  <h1><%= capitalizeFirstLetter(title) %></h1>
+  <p><%=content%></p>
+
+<%- include("partials/footer"); -%>
